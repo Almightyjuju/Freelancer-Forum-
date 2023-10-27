@@ -1,11 +1,32 @@
 body{
+  border-color: pink;
   background-color: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
+header, h3, h2 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+
 header{
   color:lightblue;
   background-color: black;
+  font-size:  3rem;
+  box-shadow: 5px 5px 10px pink;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+h3{ font-size: 20px;
+
 }

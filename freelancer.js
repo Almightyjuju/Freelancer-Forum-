@@ -19,3 +19,35 @@ function renderLancers() {
 }
 
 renderLancers();
+// get h3 element by its class name
+let averagePriceElement = document.querySelector(".average-price");
+// set the initial starting price
+let startingPrice = 30;
+
+// function to update the averaging staring price
+function updateAveragePrice() {
+  averagePriceElement.textContent = `The average staring price is $ ${startingPrice}`;
+  if (startingPrice >= 100) {
+    startingPrice = 0; // restart the price to 0
+  } else {
+    startingPrice += 20; // increase the price by 20
+  }
+}
+
+// call the update function
+updateAveragePrice();
+// call the update function every 4 seconds
+setInterval(updateAveragePrice, 4000);
+
+// editing header
+let headerElement = document.querySelector("header");
+//  function to change color between light blue and pink for text
+function toggleColor() {
+  if (headerElement.style.color === "lightblue") {
+    headerElement.style.color === "pink";
+  } else {
+    headerElement.style.color = "lightblue";
+  }
+}
+
+setInterval(toggleColor, 2000);
